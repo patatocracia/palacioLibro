@@ -1,0 +1,205 @@
+body{
+
+    font-family: sans-serif;
+}
+.link{
+    margin-right: 1rem;
+    border-radius: .5rem;
+}
+.link:link, .link:visited {
+    background-color: #33c3f0;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+.link:hover, .link:active {
+    background-color: lightblue;
+}
+
+/*
+
+HEADER
+
+*/
+header{
+    border-bottom: 2px solid #ccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-end;
+}
+.header-datos{
+    display: flex;
+    flex-direction: row;
+    align-content: baseline;
+}
+.header-datos * {
+    margin: 1rem;
+}
+
+/*
+
+NAVBAR
+
+*/
+
+navbar{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+navbar  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: baseline;
+}
+navbar  .form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: baseline;
+}
+navbar .navbar-datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: baseline;
+}
+
+
+
+
+/*
+
+LIBRO
+
+ */
+
+
+.home-libro { /*caja de un libro mostrada en home*/
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.home-libro > span {
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/*
+
+Carrito
+todo media query para hacer el carrito grande en movil
+*/
+@media only screen and (max-width: 600px){
+    #carrito {
+        display: none;
+        position: -webkit-sticky;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        float: right;
+        top: 0;
+        right: 0;
+        background-color: beige;
+        z-index: 1000;
+        border-left: 3px solid grey;
+        overflow-y: scroll;
+        padding: 3rem;
+
+    }
+}
+@media only screen and (min-width: 601px){
+    #carrito {
+        display: none;
+        position: -webkit-sticky;
+        position: fixed;
+        height: 100vh;
+        width: 35vw;
+        float: right;
+        top: 0;
+        right: 0;
+        background-color: beige;
+        z-index: 1000;
+        border-left: 3px solid grey;
+        overflow-y: scroll;
+        padding: 3rem;
+    }
+}
+/*#carrito {*/
+/*    display: none;*/
+/*    position: -webkit-sticky;*/
+/*    position: fixed;*/
+/*    height: 100vh;*/
+/*    width: 35vw;*/
+/*    float: right;*/
+/*    top: 0;*/
+/*    right: 0;*/
+/*    background-color: beige;*/
+/*    z-index: 1000;*/
+/*    border-left: 3px solid grey;*/
+/*    overflow-y: scroll;*/
+/*}*/
+
+
+.carrito-button {
+    margin: 5px;
+}
+.productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.producto{
+height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.producto{
+margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+.carrito-img{
+    height: 100%;
+    width: auto;
+    margin: 1rem;
+}
+.libros-row{
+    margin-bottom: 1rem;
+}
+
+
+/*
+
+BANNER
+
+*/
+.banner{
+    margin-bottom: 3rem;
+}
+
+
+/*
+
+login
+
+*/
+
+
+.login-container{
+    margin-top: 5rem;
+}
